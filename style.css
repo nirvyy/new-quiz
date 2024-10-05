@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 15px 30px; /* Adjust padding to make the button larger */
+  font-size: 20px; /* Increase font size */
+  width: 200px; /* Set a specific width */
+  height: 60px; /* Set a specific height */
+  background-color: #4CAF50; /* Optional: Add background color */
+  color: white; /* Optional: Set text color */
+  border: none; /* Optional: Remove border */
+  border-radius: 10px; /* Optional: Round the corners */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Question Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>AI or Real Quiz</h1>
+        <h2>Below are a series of images, can you tell if they're AI generated or real photos? It gets harder as it goes</h2>
+        <h3>Made by <a href="https://nirvan.xyz">Nirvan Panjwani</a></a></h3>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>Question 1</p>
+                <div>
+                    <img src="image1.jpg"Picture related to the question" width="700">
+                </div>
+
+                <label><input type="radio" name="q1" value="AI"> AI</label><br>
+                <label><input type="radio" name="q1" value="Real"> Real</label><br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>Question 2</p>
+                <div>
+                    <img src="image2.jpg"Picture related to the question" width="700">
+                </div>
+                <label><input type="radio" name="q2" value="AI"> AI</label><br>
+                <label><input type="radio" name="q2" value="Real"> Real</label><br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>Question 3</p>
+                <div>
+                    <img src="image3.jpg"Picture related to the question" width="700">
+                </div>
+                <label><input type="radio" name="q3" value="AI"> AI</label><br>
+                <label><input type="radio" name="q3" value="Real"> Real</label><br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>Question 4</p>
+                <div>
+                    <img src="image4.jpg"Picture related to the question" width="700">
+                </div>
+                <label><input type="radio" name="q4" value="AI"> AI</label><br>
+                <label><input type="radio" name="q4" value="Real"> Real</label><br>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>Question 5</p>
+                <div>
+                    <img src="image5.jpg"Picture related to the question" width="700">
+                </div>
+                <label><input type="radio" name="q5" value="AI"> AI</label><br>
+                <label><input type="radio" name="q5" value="Real"> Real</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()" style="padding: 15px 30px; font-size: 20px; width: 200px; height: 60px; background-color: navy; color: white; border: none; border-radius: 10px; cursor: pointer;">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
