@@ -1,11 +1,11 @@
 function submitQuiz() {
     // Define the correct answers
     const correctAnswers = {
-        q1: 'Real',
+        q1: 'ai',
         q2: 'ai',
         q3: 'ai',
-        q4: 'Real',
-        q5: 'Real'
+        q4: 'ai',
+        q5: 'ai'
     };
   
     let score = 0;
