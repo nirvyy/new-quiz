@@ -7,11 +7,11 @@ function submitQuiz() {
         q4: 'ai',
         q5: 'ai'
     };
-  
+
     let score = 0;
     const totalQuestions = 5;
     const incorrectQuestions = [];
-  
+
     // Iterate over the answers
     for (let i = 1; i <= totalQuestions; i++) {
         const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
@@ -23,15 +23,8 @@ function submitQuiz() {
             incorrectQuestions.push(i);
         }
     }
-  
-    // Display the result
-    const resultDiv = document.getElementById('result');
-    let resultMessage = `You got ${score} out of ${totalQuestions} correct!`;
-  
-    // If there are incorrect questions, list them
-    if (incorrectQuestions.length > 0) {
-        resultMessage += `\nYou got the following questions wrong: ${incorrectQuestions.join(', ')}`;
-    }
-  
-    resultDiv.textContent = resultMessage;
-  }
+
+    // Redirect to the results page with query parameters
+    const queryParams = `?score=${score}&incorrectQuestions=${incorrectQuestions.join(',')}`;
+    window.location.href = `result.html${queryParams}`;
+}
