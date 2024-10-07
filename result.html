@@ -25,8 +25,11 @@
         // Function to save the user's score to the database
         function saveScore(score) {
             const scoresRef = ref(database, 'scores');
-            push(scoresRef, score);
-        }
+            console.log('Saving score:', score);  // Debug log
+              push(scoresRef, score)
+                .then(() => console.log('Score saved successfully!'))  // Debug log
+                .catch((error) => console.error('Error saving score:', error));  // Error log
+}           
     
         // Function to calculate the average score
         async function calculateAverage() {
